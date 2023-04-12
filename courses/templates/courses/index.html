@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Courses
+{% endblock title %}
+
+{% block content %}
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Course</th>
+                <th>Quarter/Semester</th>
+                <th>University</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for course in courses %}
+                <tr>
+                    <td>
+                        <a href="{% url 'courses:detail' course.id %}">
+                            {{ course.course_ID }}
+                        </a>
+                    </td>
+                    <td>{{ course.quarter.quarter }} {{ course.quarter.year }}</td>
+                    <td>{{ course.university }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

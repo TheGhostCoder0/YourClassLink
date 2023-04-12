@@ -1,0 +1,20 @@
+{% extends "admin/base.html" %}
+
+{% block extrahead %}
+    {{ block.super }}
+    <style type="text/css">
+    #content-related .skip-to-content-link {
+        display: none !important;
+        visibility: hidden !important;
+        }
+    .theme-toggle {
+        display: none;
+        }
+
+    </style>
+
+{% endblock %}
+
+{% block breadcrumbs %}
+    {# Override the default breadcrumbs block to remove the link to the admin index page #}
+{% endblock %}

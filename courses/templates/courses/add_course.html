@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Courses
+{% endblock title %}
+
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+{% block content %}
+<script>
+        function validateForm() {
+            var courseID = document.getElementById("id_course_ID").value;
+            var courseName = document.getElementById("id_course_name").value;
+            var quarter = document.getElementById("id_quarter").value;
+            var link = document.getElementById("id_link").value;
+
+            if (courseID == "" || courseName == "" || quarter == "" || link == "") {
+                var alertDiv = document.createElement("div");
+                alertDiv.className = "alert alert-danger";
+                alertDiv.role = "alert";
+                alertDiv.innerHTML = "Please fill out all fields!";
+                document.getElementById("form-container").appendChild(alertDiv);
+                return false;
+            }
+        }
+    </script>
+<div class="card" style="position: relative; width: 100%;">
+    <img src="https://cdn.pixabay.com/photo/2016/12/15/20/29/tablet-1910018_1280.jpg" class="card-img-top" alt="..."
+         style="height:200px; object-fit: cover;">
+    <div class="card-body"
+         style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; white-space: nowrap;">
+        <h2 style="font-size: 72px; color: white; text-shadow: 4px 4px #000; -webkit-text-fill-color: white; ">Thank you for adding a link!</h2>
+
+    </div>
+    <div class="card-body card-body-text"
+         style="background-color: #296e6b; color: white;">
+        <p class="card-text">An example of a course you should add is "ECS 36A: Programming & Problem Solving Fall 20XX UC Davis https://www.example.com"</p>
+    </div>
+</div>
+<h1 style="margin-top: 20px">Add Course</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
+{% endblock %}

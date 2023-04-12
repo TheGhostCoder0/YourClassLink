@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ course.course_ID}} {{ course.quarter.quarter }} {{ course.quarter.year }}
+{% endblock title %}
+
+{% block content %}
+    <dl>
+        <dt>Course</dt>
+        <dd>{{ course.course_ID}}: {{ course.course_name }}</dd>
+        <dt>Quarter/Semester</dt>
+        <dd>{{ course.quarter.quarter }} {{ course.quarter.year }}</dd>
+        <dt>University</dt>
+        <dd>{{ course.university }}</dd>
+        <dt>Link</dt>
+        <dd>
+            <a href="{{ course.link }}">{{ course.link }}</a>
+        </dd>
+    </dl>
+{% endblock %}

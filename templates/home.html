@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>YourClassLink</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <style>
+          .hyperlink {
+            color: #3172db;
+            text-decoration: underline;
+            cursor: pointer;
+          }
+          .card {
+            border: 1px solid #333333;
+            padding: 15px;
+          }
+
+        </style>
+    </head>
+    <body>
+        <!-- Header - set the background image for the header in the line below-->
+        <header class="py-5 bg-image-full" style="background-image: url('https://i.ibb.co/qWk2743/link-gdde9fae78-1920.jpg'); background-size: cover; background-position: center center;">
+            <div class="text-center my-5">
+                <img class="img-fluid mb-4" src="https://i.ibb.co/st35s0d/chain-Link.png" alt="Chain Link" width="150" height="150"/>
+                <h1 class="text-black fs-3 fw-bolder" style="font-family: Courier; font-weight: bold;">
+                    <font size="+5">Your Class Link</font>
+                </h1>
+                <p class="text-black fw-bolder" style="font-family: Courier; font-weight: bold;">
+                    <font size="+2">A Place To Share Class Links</font>
+                </p>
+            </div>
+        </header>
+        <!-- Content section-->
+        <section class="py-2">
+            <div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h2>Essentially just a notebook full of <span class="hyperlink">hyperlinks</span>.</h2>
+                        <p class="lead">Your Class Link exists to provide a centralized location for easy access to the necessary links for joining discussions related to your various classes. </p>
+                        <p class="mb-0">We gather links from different courses and universities in one place to save you time and effort, so you can focus on achieving your academic goals.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-1">
+            <div class="container my-5">
+                <div class="card text-center" style="background-color: #08E8DE;">
+                  <div class="card-body">
+                    <h2 class="card-title" mb-4>Find Your Course</h2>
+                    <p class="card-text" mb-4>Browse our library of links.</p>
+                    <a href="/university" class="btn btn-primary" style="margin-top: 10px;">Start Searching</a>
+                  </div>
+                </div>
+            </div>
+        </section>
+        <!-- Image element - set the background image for the header in the line below-->
+        <div class="py-2 bg-image-full " style="background-image: url('https://cdn.pixabay.com/photo/2020/08/17/14/23/computer-5495557_1280.jpg'); background-position: center center;">
+            <!-- Put anything you want here! The spacer below with inline CSS is just for demo purposes!-->
+            <div style="height: 20rem"></div>
+        </div>
+        <!-- Content section-->
+        <section class="py-2">
+            <div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h2>Join us today and simplify your academic journey!</h2>
+                        <p class="lead">Our mission is to help you succeed in your studies by making it effortless for you to find the resources you need to excel.</p>
+                        <p class="mb-0">Find the links you need or conveniently suggest a new one to us. We strive to continuously expand our database and provide a seamless experience for all your academic needs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-1">
+            <div class="container my-5">
+                <div class="card text-center" style="background-color: #08E8DE;">
+                  <div class="card-body">
+                    <h2 class="card-title" mb-4>Add a New Course</h2>
+                    <p class="card-text" mb-4>Help your fellow students by adding a new course link to our library.</p>
+                    <a href="/courses/add" class="btn btn-primary" style="margin-top: 10px;">Add a Link</a>
+                  </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="py-5" style="background-color: #003e3f;">
+            <div class="container"><p class="m-1 text-center text-white">Copyright &copy; Your Class Link 2023</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
+{% endblock %}

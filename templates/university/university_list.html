@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Universities
+{% endblock title %}
+
+{% block content %}
+
+<header class="py-5 bg-image-full"
+        style="background-image: url('https://cdn.pixabay.com/photo/2013/02/21/17/42/kansai-university-84363_1280.jpg'); background-size: cover; background-position: center calc(60% + 225px); height: 150px;">
+    <div class="text-center my-5" style="display: flex; align-items: center;">
+        <h1 class="text-black fs-1 fw-bolder" style="color: white; text-shadow: 4px 4px #000; -webkit-text-fill-color: white; font-weight: bold; margin-top: -50px; margin-left: auto; margin-right: auto; font-size: 4em;">
+            Universities
+        </h1>
+    </div>
+</header>
+
+<style>
+    .list-group {
+        background-color: #59A0D9;
+        margin-top: 1em;
+    }
+
+    .list-group-item {
+  background-color: #59A0D9;
+  color: white;
+}
+
+.list-group-item:hover {
+  background-color: #007bff;
+  color: white;
+}
+</style>
+<div class="list-group">
+    {% for university in universities %}
+    <a href="{% url 'university_detail' university.pk %}" class="list-group-item list-group-item-action" style="font-weight: bold;">{{ university.name }}</a>
+    {% endfor %}
+</div>
+
+<div class="card text-center my-5">
+  <div class="card-body">
+    <h5 class="card-title">Don't see your university? Request it now!</h5>
+    <p class="card-text">We are constantly updating our list of universities. If you don't see your university, let us know and we'll add it.</p>
+    <a href="{% url 'request_university' %}" class="btn btn-primary">Request a University</a>
+  </div>
+</div>
+
+
+{% endblock %}

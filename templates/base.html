@@ -1,0 +1,89 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}YourClassLinks{% endblock %}</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <style>
+    .theme-toggle {
+      display: none;
+    }
+    main {
+      padding-top: 10px;
+    }
+    nav {
+      margin-bottom: 10px;
+    }
+
+
+
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #b3ecec;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+            <img src="https://i.ibb.co/st35s0d/chain-Link.png" alt="Logo" width="24" height="24"
+                 class="d-inline-block align-text-top">
+            YourClassLink
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav mr-auto">
+                <a class="nav-item nav-link" style="color: #333333" ; href="/university">Universities</a>
+                <a class="nav-item nav-link" style="color: #333333" ; href="/courses">Class Library</a>
+                <a class="nav-item nav-link" style="color: #333333" ; href="/courses/add">Add Class</a>
+            </div>
+            <div class="navbar-nav ml-auto ">
+                <a class="nav-item nav-link mr-3" style="color: #333333" ; href="/about">About</a>
+                <form class="form-inline" action="{% url 'search' %}" method="GET">
+                    <div class="input-group">
+                        <input type="search" id="form1" class="form-control mr-2" name="q" placeholder="Search courses...">
+                        <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i>Search</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<main class="container">
+    {% block content %}
+
+    {% endblock content %}
+</main>
+
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

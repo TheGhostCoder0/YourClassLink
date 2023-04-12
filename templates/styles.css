@@ -1,0 +1,18 @@
+.main {
+  border-top: 2px solid #ccc;
+  padding-top: 20px; /* add some padding to the top to separate the border from the content */
+}
+.nav {
+  margin-top: 20px; /* adjust the value to your liking */
+}
+
+.navbar {
+  border-bottom: none;
+  margin-bottom: 20px;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+}
+
+.container {
+  margin-top: 20px;
+}

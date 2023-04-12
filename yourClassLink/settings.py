@@ -28,6 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'cryptic-refuge-76111.herokuapp.com',
+    '127.0.0.1'
 ]
 
 

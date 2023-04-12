@@ -11,6 +11,7 @@ def add_course(request):
         if form.is_valid():
             form.save()
             form = CourseForm()  # clear the form
+
     else:
         form = CourseForm()
 
@@ -27,15 +28,3 @@ def detail(request, course_id):
     return render(request, 'courses/detail.html', {'course': course})
 
 
-def request_university(request):
-    if request.method == 'POST':
-        # Handle the form submission
-        # Extract form data from request.POST dictionary
-        name = request.POST.get('name')
-        # Do any additional processing of form data as needed
-        # ...
-        # Return a success message
-        return render(request, 'university_list.html')
-    else:
-        # Render the university request form
-        return render(request, 'university_list.html')

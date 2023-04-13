@@ -5,6 +5,8 @@ from django.http import HttpResponseRedirect
 from django.urls import reverse
 from .utils import notify_new_university
 from django.http import HttpResponse
+from django.http import Http404
+
 
 
 def home(request):
@@ -74,8 +76,8 @@ def sitemap(request):
     return response
 
 
-def custom_404(request, exception):
-    return render(request, '404.html', status=404)
+
+
 
 
 

@@ -6,16 +6,19 @@ from django.urls import reverse
 
 # Create your views here.
 def add_course(request):
+    show_modal = False  # set the initial value of show_modal to False
+
     if request.method == 'POST':
         form = CourseForm(request.POST)
         if form.is_valid():
             form.save()
             form = CourseForm()  # clear the form
+            show_modal = True  # set show_modal to True when the form is successfully submitted
 
     else:
         form = CourseForm()
 
-    return render(request, 'courses/add_course.html', {'form': form})
+    return render(request, 'courses/add_course.html', {'form': form, 'show_modal': show_modal})
 
 
 def index(request):

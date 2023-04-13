@@ -8,14 +8,12 @@
 <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
 {% block content %}
 <style>
-        @media (max-width: 576px) {
-            .card-body {
-                width: 100%;
-                padding: 0 20px;
-                box-sizing: border-box;
-            }
+    @media (max-width: 576px) {
+        #thank-you-text {
+            font-size: 10vw;
         }
-    </style>
+    }
+</style>
 <script>
         function validateForm() {
             var courseID = document.getElementById("id_course_ID").value;
@@ -38,7 +36,7 @@
          style="height:200px; object-fit: cover;">
     <div class="card-body"
      style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; white-space: nowrap;">
-    <span id="thank-you-text" style="font-size: 6vw; color: white; text-shadow: 4px 4px #000; -webkit-text-fill-color: white; ">Thank you for adding a link!</span>
+    <span id="thank-you-text" style="font-size: 6vw; color: white; text-shadow: 0.03em 0.03em 0.03em #000; -webkit-text-fill-color: white; ">Thank you for adding a link!</span>
 </div>
     <div class="card-body card-body-text"
          style="background-color: #296e6b; color: white;">

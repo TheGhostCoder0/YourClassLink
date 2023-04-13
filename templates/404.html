@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+  <div class="jumbotron">
+    <h1 class="display-4">Sorry, we couldn't find what you're looking for!</h1>
+    <p class="lead">The page you were looking for doesn't seem to exist. It might have been moved, deleted or never existed in the first place.</p>
+    <hr class="my-4">
+    <p>Please check your URL or go back to our <a href="{% url 'home' %}">homepage</a>.</p>
+  </div>
+</div>
+{% endblock %}

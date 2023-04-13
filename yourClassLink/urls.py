@@ -17,6 +17,10 @@ from django.contrib import admin
 from django.urls import path, include
 from api.models import CourseResource
 from . import views
+from .views import custom_404
+
+
+handler404 = custom_404
 
 course_resource = CourseResource()
 

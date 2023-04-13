@@ -7,6 +7,13 @@
 {% load static %}
 <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
 {% block content %}
+@media (max-width: 576px) {
+  .card-body {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+}
 <script>
         function validateForm() {
             var courseID = document.getElementById("id_course_ID").value;

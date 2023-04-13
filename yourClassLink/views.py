@@ -4,6 +4,7 @@ from courses.models import University, Course, Quarter
 from django.http import HttpResponseRedirect
 from django.urls import reverse
 from .utils import notify_new_university
+from django.http import HttpResponse
 
 
 def home(request):
@@ -65,6 +66,12 @@ def request_university(request):
         notify_new_university(name)
         return render(request, 'university/request_university.html', {'show_modal': True})
     return render(request, 'university/request_university.html')
+
+
+def sitemap(request):
+    with open('sitemap.xml', 'r') as f:
+        response = HttpResponse(f.read(), content_type='application/xml')
+    return response
 
 
 

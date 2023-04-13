@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path, include
 from api.models import CourseResource
 from . import views
+from django.views.generic import TemplateView
 
 course_resource = CourseResource()
 
@@ -30,6 +31,7 @@ urlpatterns = [
     path('about/', views.about, name='about'),
     path('search/', views.search, name='search'),
     path('contact/', include('contact.urls'), name='contact'),
-    path('university/request', views.request_university, name='request_university')
+    path('university/request', views.request_university, name='request_university'),
+    path('sitemap.xml', TemplateView.as_view(template_name="sitemap.xml", content_type='text/xml')),
 
 ]

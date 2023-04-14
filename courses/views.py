@@ -17,9 +17,7 @@ def add_course(request):
             show_modal = True  # set show_modal to True when the form is successfully submitted
 
             # Send notification email
-            course_name = form.cleaned_data.get('course_name')
-            link = form.cleaned_data.get('link')
-            course_notification(course_name, link)
+            course_notification()
 
     else:
         form = CourseForm()

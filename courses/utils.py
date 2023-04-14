@@ -1,7 +1,7 @@
 from smtplib import SMTP
 
 
-def course_notification(course_name, link):
+def course_notification():
     my_email = "yourclasslink.auth@gmail.com"
     password = "syirdlcfvjppaeuj"
     with SMTP("smtp.gmail.com", port=587) as connection:

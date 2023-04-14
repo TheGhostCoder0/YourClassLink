@@ -2,6 +2,7 @@ from django.http import HttpResponse, Http404, HttpResponseRedirect
 from django.shortcuts import render, get_object_or_404
 from .models import Course, CourseForm
 from django.urls import reverse
+from utils import course_notification
 
 
 # Create your views here.
@@ -14,7 +15,11 @@ def add_course(request):
             form.save()
             form = CourseForm()  # clear the form
             show_modal = True  # set show_modal to True when the form is successfully submitted
-            notification()
+
+            # Send notification email
+            course_name = form.cleaned_data.get('course_name')
+            link = form.cleaned_data.get('link')
+            course_notification(course_name, link)
 
     else:
         form = CourseForm()

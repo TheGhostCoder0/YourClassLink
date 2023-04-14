@@ -52,8 +52,9 @@ About
 </script>
 {% endif %}
 <!-- Header-->
+{% load static %}
 <header class="py-5"
-        style="background-image: url(https://cdn.pixabay.com/photo/2015/09/05/20/02/coding-924920_1280.jpg); background-size: cover; background-position: center center; height: 150px; display: flex; align-items: center;">
+        style="background-image: url('{% static 'images/aboutTop.jpg' %}'); background-size: cover; background-position: center center; height: 150px; display: flex; align-items: center;">
     <div class="container px-lg-5">
         <div class="p-4 p-lg-5 rounded-3 text-center">
             <div class="m-4 m-lg-5 text-white">

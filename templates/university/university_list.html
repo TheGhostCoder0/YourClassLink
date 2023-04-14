@@ -5,9 +5,9 @@ Universities
 {% endblock title %}
 
 {% block content %}
-
+{% load static %}
 <header class="py-5 bg-image-full"
-        style="background-image: url('https://cdn.pixabay.com/photo/2013/02/21/17/42/kansai-university-84363_1280.jpg'); background-size: cover; background-position: center calc(60% + 225px); height: 150px;">
+        style="background-image: url('{% static 'images/universityTop.jpg' %}'); background-size: cover; background-position: center calc(60% + 225px); height: 150px;">
     <div class="text-center my-5" style="display: flex; align-items: center;">
         <h1 class="text-black fs-1 fw-bolder" style="color: white; text-shadow: 4px 4px #000; -webkit-text-fill-color: white; font-weight: bold; margin-top: -50px; margin-left: auto; margin-right: auto; font-size: 4em;">
             Universities

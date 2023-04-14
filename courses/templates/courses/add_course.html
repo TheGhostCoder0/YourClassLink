@@ -63,8 +63,9 @@ Courses
   });
 </script>
 {% endif %}
+{% load static %}
 <div class="card" style="position: relative; width: 100%;">
-    <img src="https://cdn.pixabay.com/photo/2016/12/15/20/29/tablet-1910018_1280.jpg" class="card-img-top" alt="..."
+    <img src="{% static 'images/addCourseTop.jpg' %}" class="card-img-top" alt="..."
          style="height:200px; object-fit: cover;">
     <div class="card-body"
          style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; white-space: nowrap;">

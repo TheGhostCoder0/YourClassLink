@@ -8,4 +8,4 @@ def course_notification(course_name, link):
         connection.starttls()
         connection.login(user=my_email, password=password)
         connection.sendmail(from_addr=my_email, to_addrs="keenavasiloff@gmail.com",
-                            msg=f"Subject:Your Class Link Notification\n\nNew course added:\nCourse name: {course_name}\nLink: {link}")
+                            msg=f"Subject:Your Class Link Notification\n\nNew course added!!!")

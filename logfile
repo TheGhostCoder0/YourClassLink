@@ -1,0 +1,2 @@
+2023-04-13 14:44:02.534 PDT [45977] LOG:  redirecting log output to logging collector process
+2023-04-13 14:44:02.534 PDT [45977] HINT:  Future log output will appear in directory "log".

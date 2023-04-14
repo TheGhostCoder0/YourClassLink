@@ -12,11 +12,15 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 import os
+import dj_database_url
+
+
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
+FIXTURE_DIRS = (os.path.join(BASE_DIR, 'fixtures'),)
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
@@ -82,11 +86,10 @@ WSGI_APPLICATION = 'yourClassLink.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+os.environ['DATABASE_URL'] = 'postgres://tcmsgjrurvcapb:abe306e883780c0bf33917403c3616f55b2918125c1de985149354d337c21d95@ec2-34-226-11-94.compute-1.amazonaws.com:5432/d9hjhrt0d968rc'
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    'default': dj_database_url.config()
 }
 
 

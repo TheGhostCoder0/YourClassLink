@@ -1,0 +1,931 @@
+[
+  {
+    "model": "admin.logentry",
+    "fields": {
+      "action_time": "2023-04-03T05:24:33.629Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "1",
+      "object_repr": "admin",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "fields": {
+      "action_time": "2023-04-03T05:24:59.800Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "University object (1)",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "fields": {
+      "action_time": "2023-04-03T05:25:49.776Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "Spring2023",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "fields": {
+      "action_time": "2023-04-03T05:32:09.294Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": "ECS 036C: Data Structures, Algorithms, & Programming",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "fields": {
+      "action_time": "2023-04-04T00:10:12.921Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "2",
+      "object_repr": "PHYS 9B: Waves, Sound, Optics, Thermodynamics, and Fluids",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Course ID\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "fields": {
+      "action_time": "2023-04-04T06:36:09.699Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "University of California, Berkeley",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "fields": {
+      "action_time": "2023-04-04T06:37:06.178Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "3",
+      "object_repr": "ECON 100A: Microeconomics",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "fields": {
+      "action_time": "2023-04-04T08:47:25.790Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": "ECS 36C: Data Structures, Algorithms, & Programming",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Course ID\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "fields": {
+      "action_time": "2023-04-04T09:06:42.574Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "5",
+      "object_repr": "STUFF: STUFF",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "fields": {
+      "action_time": "2023-04-12T20:30:17.708Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "3",
+      "object_repr": "Test U",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "fields": {
+      "action_time": "2023-04-12T20:30:51.733Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "3",
+      "object_repr": "Test U",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can view log entry",
+      "content_type": 1,
+      "codename": "view_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 2,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 2,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 2,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can view permission",
+      "content_type": 2,
+      "codename": "view_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can add group",
+      "content_type": 3,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can change group",
+      "content_type": 3,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 3,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can view group",
+      "content_type": 3,
+      "codename": "view_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can add user",
+      "content_type": 4,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can change user",
+      "content_type": 4,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can delete user",
+      "content_type": 4,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can view user",
+      "content_type": 4,
+      "codename": "view_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 5,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 5,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 5,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can view content type",
+      "content_type": 5,
+      "codename": "view_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can add session",
+      "content_type": 6,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can change session",
+      "content_type": 6,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 6,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can view session",
+      "content_type": 6,
+      "codename": "view_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can add quarter",
+      "content_type": 7,
+      "codename": "add_quarter"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can change quarter",
+      "content_type": 7,
+      "codename": "change_quarter"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can delete quarter",
+      "content_type": 7,
+      "codename": "delete_quarter"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can view quarter",
+      "content_type": 7,
+      "codename": "view_quarter"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can add university",
+      "content_type": 8,
+      "codename": "add_university"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can change university",
+      "content_type": 8,
+      "codename": "change_university"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can delete university",
+      "content_type": 8,
+      "codename": "delete_university"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can view university",
+      "content_type": 8,
+      "codename": "view_university"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can add course",
+      "content_type": 9,
+      "codename": "add_course"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can change course",
+      "content_type": 9,
+      "codename": "change_course"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can delete course",
+      "content_type": 9,
+      "codename": "delete_course"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can view course",
+      "content_type": 9,
+      "codename": "view_course"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can add contact message",
+      "content_type": 10,
+      "codename": "add_contactmessage"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can change contact message",
+      "content_type": 10,
+      "codename": "change_contactmessage"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can delete contact message",
+      "content_type": 10,
+      "codename": "delete_contactmessage"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "fields": {
+      "name": "Can view contact message",
+      "content_type": 10,
+      "codename": "view_contactmessage"
+    }
+  },
+  {
+    "model": "auth.user",
+    "fields": {
+      "password": "pbkdf2_sha256$600000$pP73rygHO5oBuf4VmWf4rv$HKPD9Wc98aqfm2MNHfQGTh2ybu/wL4xdUYcnPgf+R5s=",
+      "last_login": "2023-04-12T23:25:15.916Z",
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "Keena",
+      "last_name": "Vasiloff",
+      "email": "keenavasiloff@gmail.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2023-04-03T05:23:54Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "fields": {
+      "app_label": "admin",
+      "model": "logentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "fields": {
+      "app_label": "auth",
+      "model": "permission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "fields": {
+      "app_label": "auth",
+      "model": "group"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "fields": {
+      "app_label": "auth",
+      "model": "user"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "fields": {
+      "app_label": "contenttypes",
+      "model": "contenttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "fields": {
+      "app_label": "sessions",
+      "model": "session"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "fields": {
+      "app_label": "courses",
+      "model": "quarter"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "fields": {
+      "app_label": "courses",
+      "model": "university"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "fields": {
+      "app_label": "courses",
+      "model": "course"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "fields": {
+      "app_label": "contact",
+      "model": "contactmessage"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "fields": {
+      "session_data": ".eJxVjDsOwjAQBe_iGln-xVlT0nMGa9fe4ACypTipEHeHSCmgfTPzXiLitpa4dV7inMVZaHH63QjTg-sO8h3rrcnU6rrMJHdFHrTLa8v8vBzu30HBXr41snfgVFBOOxtMcAZAs0VSPKTsAcbRBPQqGTtNSF7nQENyBo0HTJrE-wO09jc-:1pjCfr:xJQC9Mp-VSa6SgUm0Z5Kv0zWNhfuDnpBg-gfbFnt5aM",
+      "expire_date": "2023-04-17T05:24:11.800Z"
+    }
+  },
+  {
+    "model": "courses.university",
+    "fields": {
+      "name": "University of California, Davis"
+    }
+  },
+  {
+    "model": "courses.university",
+    "fields": {
+      "name": "University of California, Berkeley"
+    }
+  },
+  {
+    "model": "courses.quarter",
+    "fields": {
+      "quarter": "Spring",
+      "year": 2023
+    }
+  },
+  {
+    "model": "courses.course",
+    "fields": {
+      "course_ID": "ECS 36C",
+      "course_name": "Data Structures, Algorithms, & Programming",
+      "link": "https://discord.gg/gGtTREYmwg",
+      "quarter": 1,
+      "university": 1,
+      "date_created": "2023-04-03T05:32:09.282Z"
+    }
+  },
+  {
+    "model": "courses.course",
+    "fields": {
+      "course_ID": "PHYS 9B",
+      "course_name": "Waves, Sound, Optics, Thermodynamics, and Fluids",
+      "link": "https://discord.gg/jKCmHRD",
+      "quarter": 1,
+      "university": 1,
+      "date_created": "2023-04-03T23:28:26.434Z"
+    }
+  },
+  {
+    "model": "courses.course",
+    "fields": {
+      "course_ID": "ECON 100A",
+      "course_name": "Microeconomics",
+      "link": "https://discord.gg/4AwyrwNk",
+      "quarter": 1,
+      "university": 2,
+      "date_created": "2023-04-04T06:37:06.172Z"
+    }
+  },
+  {
+    "model": "courses.course",
+    "fields": {
+      "course_ID": "ECS 036A",
+      "course_name": "Programming & Problem Solving",
+      "link": "https://www.example.com",
+      "quarter": 1,
+      "university": 1,
+      "date_created": "2023-04-04T09:04:25.204Z"
+    }
+  },
+  {
+    "model": "contact.contactmessage",
+    "fields": {
+      "name": "",
+      "email": "",
+      "message": ""
+    }
+  },
+  {
+    "model": "contact.contactmessage",
+    "fields": {
+      "name": "",
+      "email": "",
+      "message": ""
+    }
+  },
+  {
+    "model": "contact.contactmessage",
+    "fields": {
+      "name": "",
+      "email": "",
+      "message": ""
+    }
+  },
+  {
+    "model": "contact.contactmessage",
+    "fields": {
+      "name": "",
+      "email": "",
+      "message": ""
+    }
+  },
+  {
+    "model": "contact.contactmessage",
+    "fields": {
+      "name": "",
+      "email": "",
+      "message": ""
+    }
+  },
+  {
+    "model": "contact.contactmessage",
+    "fields": {
+      "name": "",
+      "email": "",
+      "message": ""
+    }
+  },
+  {
+    "model": "contact.contactmessage",
+    "fields": {
+      "name": "",
+      "email": "",
+      "message": ""
+    }
+  },
+  {
+    "model": "contact.contactmessage",
+    "fields": {
+      "name": "",
+      "email": "",
+      "message": ""
+    }
+  },
+  {
+    "model": "contact.contactmessage",
+    "fields": {
+      "name": "",
+      "email": "",
+      "message": ""
+    }
+  },
+  {
+    "model": "contact.contactmessage",
+    "fields": {
+      "name": "",
+      "email": "",
+      "message": ""
+    }
+  },
+  {
+    "model": "contact.contactmessage",
+    "fields": {
+      "name": "",
+      "email": "",
+      "message": ""
+    }
+  },
+  {
+    "model": "contact.contactmessage",
+    "fields": {
+      "name": "",
+      "email": "",
+      "message": ""
+    }
+  },
+  {
+    "model": "contact.contactmessage",
+    "fields": {
+      "name": "",
+      "email": "",
+      "message": ""
+    }
+  },
+  {
+    "model": "contact.contactmessage",
+    "fields": {
+      "name": "",
+      "email": "",
+      "message": ""
+    }
+  },
+  {
+    "model": "contact.contactmessage",
+    "fields": {
+      "name": "",
+      "email": "",
+      "message": ""
+    }
+  },
+  {
+    "model": "contact.contactmessage",
+    "fields": {
+      "name": "",
+      "email": "",
+      "message": ""
+    }
+  },
+  {
+    "model": "contact.contactmessage",
+    "fields": {
+      "name": "",
+      "email": "",
+      "message": ""
+    }
+  },
+  {
+    "model": "contact.contactmessage",
+    "fields": {
+      "name": "",
+      "email": "",
+      "message": ""
+    }
+  },
+  {
+    "model": "contact.contactmessage",
+    "fields": {
+      "name": "",
+      "email": "",
+      "message": ""
+    }
+  },
+  {
+    "model": "contact.contactmessage",
+    "fields": {
+      "name": "",
+      "email": "",
+      "message": ""
+    }
+  },
+  {
+    "model": "contact.contactmessage",
+    "fields": {
+      "name": "",
+      "email": "",
+      "message": ""
+    }
+  },
+  {
+    "model": "contact.contactmessage",
+    "fields": {
+      "name": "",
+      "email": "",
+      "message": ""
+    }
+  },
+  {
+    "model": "contact.contactmessage",
+    "fields": {
+      "name": "",
+      "email": "",
+      "message": ""
+    }
+  },
+  {
+    "model": "contact.contactmessage",
+    "fields": {
+      "name": "",
+      "email": "",
+      "message": ""
+    }
+  },
+  {
+    "model": "contact.contactmessage",
+    "fields": {
+      "name": "",
+      "email": "",
+      "message": ""
+    }
+  },
+  {
+    "model": "contact.contactmessage",
+    "fields": {
+      "name": "",
+      "email": "",
+      "message": ""
+    }
+  },
+  {
+    "model": "contact.contactmessage",
+    "fields": {
+      "name": "",
+      "email": "",
+      "message": ""
+    }
+  },
+  {
+    "model": "contact.contactmessage",
+    "fields": {
+      "name": "",
+      "email": "",
+      "message": ""
+    }
+  },
+  {
+    "model": "contact.contactmessage",
+    "fields": {
+      "name": "",
+      "email": "",
+      "message": ""
+    }
+  },
+  {
+    "model": "contact.contactmessage",
+    "fields": {
+      "name": "",
+      "email": "",
+      "message": ""
+    }
+  },
+  {
+    "model": "contact.contactmessage",
+    "fields": {
+      "name": "",
+      "email": "",
+      "message": ""
+    }
+  },
+  {
+    "model": "contact.contactmessage",
+    "fields": {
+      "name": "",
+      "email": "",
+      "message": ""
+    }
+  },
+  {
+    "model": "contact.contactmessage",
+    "fields": {
+      "name": "",
+      "email": "",
+      "message": ""
+    }
+  },
+  {
+    "model": "contact.contactmessage",
+    "fields": {
+      "name": "",
+      "email": "",
+      "message": ""
+    }
+  },
+  {
+    "model": "contact.contactmessage",
+    "fields": {
+      "name": "",
+      "email": "",
+      "message": ""
+    }
+  },
+  {
+    "model": "contact.contactmessage",
+    "fields": {
+      "name": "",
+      "email": "",
+      "message": ""
+    }
+  },
+  {
+    "model": "contact.contactmessage",
+    "fields": {
+      "name": "",
+      "email": "",
+      "message": ""
+    }
+  },
+  {
+    "model": "contact.contactmessage",
+    "fields": {
+      "name": "",
+      "email": "",
+      "message": ""
+    }
+  },
+  {
+    "model": "contact.contactmessage",
+    "fields": {
+      "name": "",
+      "email": "",
+      "message": ""
+    }
+  },
+  {
+    "model": "contact.contactmessage",
+    "fields": {
+      "name": "Test",
+      "email": "test@gmail.com",
+      "message": "test"
+    }
+  }
+]

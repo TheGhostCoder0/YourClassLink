@@ -1,0 +1,2 @@
+heroku-cli: Pulling postgresql-rectangular-07501 ---> local_db
+/opt/homebrew/Cellar/heroku/7.68.2/lib/client/bin/../8.0.4-96472c6/bin/heroku: line 45: 48296 Hangup: 1               "$NODE" "$DIR/run" "$@"

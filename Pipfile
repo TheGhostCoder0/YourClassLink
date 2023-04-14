@@ -9,6 +9,7 @@ pylint-django = "*"
 django-tastypie = "*"
 gunicorn = "*"
 whitenoise = "*"
+dj-database-url = "*"
 
 [dev-packages]
 

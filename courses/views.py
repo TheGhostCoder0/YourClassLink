@@ -2,7 +2,7 @@ from django.http import HttpResponse, Http404, HttpResponseRedirect
 from django.shortcuts import render, get_object_or_404
 from .models import Course, CourseForm
 from django.urls import reverse
-from utils import course_notification
+from .utils import course_notification
 
 
 # Create your views here.

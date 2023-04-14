@@ -15,7 +15,11 @@ def add_course(request):
             form.save()
             form = CourseForm()  # clear the form
             show_modal = True  # set show_modal to True when the form is successfully submitted
+<<<<<<< HEAD
             # notification()
+=======
+            notification()
+>>>>>>> 885298e47ffc6e1b2575f90dc5cc78f32817609c
 
     else:
         form = CourseForm()

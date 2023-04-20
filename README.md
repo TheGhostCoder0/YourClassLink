@@ -6,5 +6,16 @@ Your Class Link is a website designed to provide a centralized location for easy
 
 ## Technologies Used
 
+### Frontend Development
+
+- HTML/CSS
+- Javascript
+- Bootstrap Framework
+
+
 ### Backend Development
+
+- Python
+- Django Framework
+
 
